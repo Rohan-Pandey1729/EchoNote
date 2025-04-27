@@ -1,4 +1,6 @@
+import SwiftUI
 import Foundation
+
 
 class SettingsViewModel: ObservableObject {
     @AppStorage("selectedLanguage") var selectedLanguage: String = Locale.current.identifier

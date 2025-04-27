@@ -40,3 +40,12 @@ struct ConversationsView: View {
         }
     }
 }
+
+#if DEBUG
+struct ConversationsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ConversationsView()
+            .environmentObject(ConversationViewModel())
+    }
+}
+#endif

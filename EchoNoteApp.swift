@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct SwiftConvoSummarizerApp: App {
+struct EchoNoteApp: App {
     @AppStorage("isDarkMode") private var isDarkMode: Bool = false
 
     var body: some Scene {

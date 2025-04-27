@@ -10,3 +10,15 @@ struct ContentView: View {
         }
     }
 }
+
+// at the bottom of ContentView.swift
+
+#if DEBUG
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(ConversationViewModel())   // so you have live data
+            .environmentObject(SettingsViewModel())
+    }
+}
+#endif
