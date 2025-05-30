@@ -40,7 +40,7 @@ def summarize(text: str) -> str:
 # === Main ===
 if __name__ == "__main__":
     # Change below duration as needed
-    wav_path = record_audio(duration=10)
+    wav_path = record_audio(duration=20)
     transcript = transcribe_whisper(wav_path)
     
     print("\n🗣️ Transcript:\n", transcript)
